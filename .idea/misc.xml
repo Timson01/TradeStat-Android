@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_bottom_background.xml" value="0.169" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_svg_desc_image.xml" value="0.169" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font-v26/montserrat.xml" value="0.284375" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/lato.xml" value="0.2125" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/montserrat.xml" value="0.2833333333333333" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/motserrat.xml" value="0.2833333333333333" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />

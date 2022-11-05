@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">TradeStat Android</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">TradeStat</string>
+
+    <!-- Description Fragment-->
+
     <string name="hello_blank_fragment">Hello in deals</string>
-    <string name="app_title">TradeStat</string>
+    <string name="description_fragment_text">Keep statistics, improve your strategy correctly and increase your income with TradeStat</string>
+    <string name="let_s_started_desc_fragment">Let’s started</string>
+
+
 </resources>
