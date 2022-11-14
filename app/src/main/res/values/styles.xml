@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="TitleText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">32sp</item>
         <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.16</item>
     </style>
+
     <style name="DescriptionText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/lato_regular</item>
     </style>
+
+    <style name="TextComments">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="TextComments2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
 </resources>

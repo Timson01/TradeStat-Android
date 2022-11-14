@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.LogInFragment">
+
+    <ImageView
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_top_background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/TitleText"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_background" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title">
+
+        <EditText
+            android:id="@+id/login_et_email"
+            style="@style/TextComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/TextComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_show_password"
+            android:hint="@string/password"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            style="@style/TextComments2"
+            android:text="@string/forgot_your_password"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/TitleText"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="28sp"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/blue"
+        app:tint="@color/white"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login">
+
+        <TextView
+            style="@style/TextComments"
+            android:letterSpacing="0.16"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/register_login_button"
+            style="@style/TextComments"
+            android:layout_marginLeft="10dp"
+            android:letterSpacing="0.1"
+            android:text="@string/sign_up"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,5 +7,28 @@
     <string name="description_fragment_text">Keep statistics, improve your strategy correctly and increase your income with TradeStat</string>
     <string name="let_s_started_desc_fragment">Let’s started</string>
 
+    <!-- Welcome Fragment-->
+
+    <string name="welcome_frag_title">Welcome</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- Registration Fragment-->
+
+    <string name="register_title">Create an\naccount</string>
+    <string name="name">Name</string>
+    <string name="email">eMail</string>
+    <string name="password">Password</string>
+    <string name="create">Create</string>
+
+    <!-- LogIn Fragment-->
+
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="welcome_back">Welcome\nBack</string>
+
 
 </resources>
