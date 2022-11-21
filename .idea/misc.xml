@@ -3,20 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-mdpi/search_view_background.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-v24/shadow_box_background.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/custom_button.xml" value="0.1675" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_bottom_background.xml" value="0.169" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_burger__1_.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_down_arrow.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_eye_svgrepo_com.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_kisspng_computer_icons_eye_seen.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_more_svgrepo_com.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_moremenu.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_strategy_icon.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_svg_desc_image.xml" value="0.169" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_top_background.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_top_background_image__1_.xml" value="0.161" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable/ic_up_arrow.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font-v26/montserrat.xml" value="0.284375" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/lato.xml" value="0.2125" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/montserrat.xml" value="0.2833333333333333" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/font/motserrat.xml" value="0.2833333333333333" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_deals.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/deal_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_deals.xml" value="0.264" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_description.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_log_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />

@@ -15,4 +15,7 @@
     <color name="deep_dark_grey">#272C33</color>
     <color name="dark_blue">#0C2D48</color>
     <color name="grey">#EBECED</color>
+    <color name="grey_shadow">#1f3F4652</color>
+    <color name="green">#30FF39</color>
+    <color name="red">#E91E1E</color>
 </resources>
