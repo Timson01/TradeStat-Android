@@ -107,7 +107,7 @@
             android:textColor="@color/dark_grey" />
 
         <TextView
-            android:id="@+id/register_login_button"
+            android:id="@+id/signUpButton"
             style="@style/TextComments"
             android:layout_marginLeft="10dp"
             android:letterSpacing="0.1"

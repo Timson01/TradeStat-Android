@@ -9,13 +9,18 @@ import kotlinx.coroutines.launch
 class LoginViewModel: ViewModel() {
 
     private val logInEventChannel = Channel<LogInEvent>()
-    val descEvent = logInEventChannel.receiveAsFlow()
+    val logInEvent = logInEventChannel.receiveAsFlow()
 
     sealed class LogInEvent {
-        object NavigateToWelcomeScreen : LogInEvent()
+        object NavigateToDealsScreen : LogInEvent()
+        object NavigateToRegisterScreen : LogInEvent()
     }
 
-    fun onButtonNextClick() = viewModelScope.launch {
-        logInEventChannel.send(LogInEvent.NavigateToWelcomeScreen)
+    fun onButtonLogInClick() = viewModelScope.launch {
+        logInEventChannel.send(LogInEvent.NavigateToDealsScreen)
+    }
+
+    fun onButtonSignUpClick() = viewModelScope.launch {
+        logInEventChannel.send(LogInEvent.NavigateToRegisterScreen)
     }
 }

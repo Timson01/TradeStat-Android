@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import dagger.hilt.android.AndroidEntryPoint
 import space.timur.tradestatandroid.R
 import space.timur.tradestatandroid.databinding.FragmentDealsBinding
 import javax.net.ssl.SSLSessionBindingEvent
 
+@AndroidEntryPoint
 class DealsFragment : Fragment() {
 
     private lateinit var binding: FragmentDealsBinding
