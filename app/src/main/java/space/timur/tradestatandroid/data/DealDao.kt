@@ -1,6 +1,7 @@
 package space.timur.tradestatandroid.data
 
 import androidx.room.*
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DealDao {
@@ -15,6 +16,6 @@ interface DealDao {
     suspend fun delete(deal: Deal)
 
     @Query("SELECT * FROM deal_table")
-    suspend fun deleteCompletedTasks()
+    fun getDeals(): Flow<List<Deal>>
 
 }

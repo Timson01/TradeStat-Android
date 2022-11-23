@@ -187,7 +187,7 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcView"
+            android:id="@+id/rcViewDeals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -196,7 +196,7 @@
             android:layout_marginRight="30dp"
             android:background="@drawable/shadow_box_background"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/deal_item"
+            tools:listitem="@layout/item_deal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/buttons_section"/>
