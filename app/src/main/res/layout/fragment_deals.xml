@@ -173,7 +173,6 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
                 android:src="@drawable/ic_add_deal_icon" />
 
             <ImageView

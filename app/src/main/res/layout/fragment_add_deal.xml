@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_add_deal_background"
+    tools:context=".ui.add_deal.AddDealFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/addDealTitleSection"
+            style="@style/AddDealLinear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iconBack"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_back_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleText2"
+                    android:text="@string/create_new_deal"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/TitleText3"
+                    android:text="@string/it_s_simple"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/AddDealLinear"
+            android:background="@drawable/shadow_box_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addDealTitleSection">
+
+            <ImageView
+                android:id="@+id/addPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="@string/ticker_name"
+                    android:textColor="@color/light_black" />
+
+                <EditText
+                    android:id="@+id/edit_ticker_name"
+                    style="@style/EditTextHint"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/enter_ticker_name"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="@string/description"
+                    android:textColor="@color/light_black" />
+
+                <EditText
+                    android:id="@+id/edit_description"
+                    style="@style/EditTextHint"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/enter_description_for_a_deal"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/date"
+                    android:textColor="@color/light_black" />
+
+                <LinearLayout
+                    android:id="@+id/edit_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/EditTextHint"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10_21_2021"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_date_icon" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="@string/hashtag"
+                    android:textColor="@color/light_black" />
+
+                <EditText
+                    android:id="@+id/edit_hashtag"
+                    style="@style/EditTextHint"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/add_a_hashtag_to_group_deals_strong_trend"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:text="@string/amount_of_deal"
+                        android:textColor="@color/light_black" />
+
+                    <LinearLayout
+                        android:id="@+id/amountOfDeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/EditTextHint"
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nothing"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:text="@string/number_of_stocks"
+                        android:textColor="@color/light_black" />
+
+                    <LinearLayout
+                        android:id="@+id/numberOfStocks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/EditTextHint"
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nothing"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnCreateDeal"
+                style="@style/DealItemDateText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:width="200dp"
+                android:background="@drawable/button_create_deal_background"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="@string/create_deal"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

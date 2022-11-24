@@ -9,6 +9,22 @@
         <item name="android:letterSpacing">0.16</item>
     </style>
 
+    <style name="TitleText2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.16</item>
+    </style>
+
+    <style name="TitleText3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.16</item>
+    </style>
+
     <style name="DealItemTitleText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -21,6 +37,20 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="EditTextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="EditTextHint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/lato_regular</item>
     </style>
 
@@ -43,6 +73,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">10sp</item>
         <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="AddDealLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">40dp</item>
     </style>
 
 </resources>

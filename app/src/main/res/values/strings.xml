@@ -29,12 +29,31 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="welcome_back">Welcome\nBack</string>
+
+    <!-- Deals Fragment-->
+
     <string name="deals">Deals</string>
     <string name="search_view_hint">Search for deals</string>
     <string name="date">Date:</string>
     <string name="date_format">1.03.22 - 20.03.22</string>
     <string name="income">Income</string>
     <string name="count_of_trades">Count of trades:</string>
+
+    <!-- Add Deal Fragment-->
+
+    <string name="create_new_deal">Create new Deal,</string>
+    <string name="it_s_simple">It’s simple</string>
+    <string name="ticker_name">Ticker Name</string>
+    <string name="enter_ticker_name">Enter ticker name</string>
+    <string name="description">Description</string>
+    <string name="enter_description_for_a_deal">Enter description for a deal</string>
+    <string name="_10_21_2021">10/21/2021</string>
+    <string name="hashtag">Hashtag</string>
+    <string name="add_a_hashtag_to_group_deals_strong_trend">Add a hashtag to group deals (“Strong trend”)</string>
+    <string name="amount_of_deal">Amount of deal</string>
+    <string name="nothing">- - -</string>
+    <string name="number_of_stocks">Number of stocks</string>
+    <string name="create_deal">Create Deal</string>
 
 
 </resources>
