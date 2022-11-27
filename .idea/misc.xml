@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-mdpi/ic_baseline_all_inclusive_24.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-mdpi/search_view_background.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-v24/button_create_deal_background.xml" value="0.161" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/drawable-v24/shadow_box_background.xml" value="0.161" />
@@ -36,6 +37,7 @@
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/fragment_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/layout/item_deal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/menu/menu_fragment_deals.xml" value="0.253125" />
         <entry key="..\:/Android Studio Projects/TradeStatAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1675" />
       </map>
     </option>

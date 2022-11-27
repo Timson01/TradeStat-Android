@@ -19,7 +19,10 @@ data class Deal(
     var numberOfStocks: Int = 0,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
+    val createdDateFormattedWithTime: String
+        @SuppressLint("SimpleDateFormat")
+        get() = SimpleDateFormat("dd.MM.yy HH:mm").format(created)
     val createdDateFormatted: String
         @SuppressLint("SimpleDateFormat")
-        get() = SimpleDateFormat("dd/MM/yy HH:mm").format(created)
+        get() = SimpleDateFormat("dd.MM.yy").format(created)
 }

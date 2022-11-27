@@ -1,5 +1,6 @@
 package space.timur.tradestatandroid.ui.deals
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -14,7 +15,10 @@ class DealsAdapter: ListAdapter<Deal, DealsAdapter.DealsViewHolder>(DiffCallback
         fun bind(deal: Deal){
             binding.apply {
                 tickerTitle.text = deal.tickerName
-                tickerDate.text = deal.createdDateFormatted
+                tickerDate.text = deal.createdDateFormattedWithTime
+                if(deal.amount < 0){
+                    amountOfTrade.setTextColor(Color.RED)
+                }
                 amountOfTrade.text = deal.amount.toString()
             }
         }

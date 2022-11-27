@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_up"
+        android:title="@string/only_positive_deals_menu"
+        android:icon="@drawable/ic_baseline_arrow_upward_24"/>
+    <item
+        android:id="@+id/menu_all"
+        android:title="@string/menu_all"
+        android:icon="@drawable/ic_baseline_all_inclusive_24"/>
+    <item
+        android:id="@+id/menu_down"
+        android:title="@string/only_negative_deals_menu"
+        android:icon="@drawable/ic_baseline_arrow_downward_24"/>
+</menu>
