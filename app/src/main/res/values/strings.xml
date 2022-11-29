@@ -53,11 +53,12 @@
     <string name="amount_of_deal">Amount of deal</string>
     <string name="nothing">- - -</string>
     <string name="number_of_stocks">Number of stocks</string>
-    <string name="create_deal">Create Deal</string>
+    <string name="create_deal">Save Deal</string>
 
     <!-- MENU -->
     <string name="only_positive_deals_menu">only positive deals</string>
     <string name="menu_all">all</string>
     <string name="only_negative_deals_menu">only negative deals</string>
+    <string name="edit">Edit</string>
 
 </resources>

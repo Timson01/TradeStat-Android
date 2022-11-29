@@ -2,7 +2,6 @@ package space.timur.tradestatandroid.data
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
-import space.timur.tradestatandroid.ui.deals.SortOrder
 
 @Dao
 interface DealDao {

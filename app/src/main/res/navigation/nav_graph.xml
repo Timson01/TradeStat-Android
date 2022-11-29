@@ -97,7 +97,13 @@
     </fragment>
     <fragment
         android:id="@+id/addDealFragment"
-        android:name="space.timur.tradestatandroid.ui.add_deal.AddDealFragment"
+        android:name="space.timur.tradestatandroid.ui.add_edit_deal.AddEditDealFragment"
         android:label="fragment_add_deal"
-        tools:layout="@layout/fragment_add_deal" />
+        tools:layout="@layout/fragment_add_edit_deal" >
+        <argument
+            android:name="deal"
+            app:argType="space.timur.tradestatandroid.data.Deal"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 </navigation>

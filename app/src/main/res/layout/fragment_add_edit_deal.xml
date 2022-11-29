@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_add_deal_background"
-    tools:context=".ui.add_deal.AddDealFragment">
+    tools:context=".ui.add_edit_deal.AddEditDealFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -154,6 +154,7 @@
                     android:padding="10dp">
 
                     <TextView
+                        android:id="@+id/tv_edit_date"
                         style="@style/EditTextHint"
                         android:layout_width="83dp"
                         android:layout_height="wrap_content"

@@ -30,8 +30,8 @@
 
                 <ImageView
                     android:id="@+id/burgerMenu"
-                    android:layout_width="25dp"
-                    android:layout_height="35dp"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_burger_menu" />
@@ -49,7 +49,7 @@
                 <ImageView
                     android:id="@+id/moreMenu"
                     android:layout_width="wrap_content"
-                    android:layout_height="23dp"
+                    android:layout_height="19dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_more_menu" />
