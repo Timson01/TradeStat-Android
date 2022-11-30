@@ -163,6 +163,10 @@ class DealsFragment : Fragment(), DealsAdapter.OnItemClickListener {
                     is DealsViewModel.DealsEvent.ShowDealSavedConfirmationMessage -> {
                         Snackbar.make(requireView(), event.msg, Snackbar.LENGTH_LONG).show()
                     }
+                    is DealsViewModel.DealsEvent.NavigateToDealDetailFragment -> {
+                        val action = DealsFragmentDirections.actionDealsFragmentToDealDetailFragment(event.deal)
+                        findNavController().navigate(action)
+                    }
                 }
             }
         }

@@ -13,6 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_deals.*
 import space.timur.tradestatandroid.databinding.FragmentAddEditDealBinding
 import space.timur.tradestatandroid.util.exhaustive
 
@@ -40,6 +41,7 @@ class AddEditDealFragment : Fragment() {
             editHashtag.setText(viewModel.dealHashtag)
             amountOfDeal.setText(viewModel.dealAmount.toString())
             numberOfStocks.setText(viewModel.dealNumberOfStocks.toString())
+            fragTitle.text = viewModel.fragmentTitle
 
             editTickerName.addTextChangedListener {
                 viewModel.dealName = it.toString()
@@ -53,7 +55,7 @@ class AddEditDealFragment : Fragment() {
             tvEditDate.addTextChangedListener {
                 viewModel.dealCreated = it.toString()
             }
-            tvEditDate.addTextChangedListener {
+            amountOfDeal.addTextChangedListener {
                 viewModel.dealAmount = it.toString().toDouble()
             }
             numberOfStocks.addTextChangedListener {
@@ -62,6 +64,10 @@ class AddEditDealFragment : Fragment() {
 
             btnCreateDeal.setOnClickListener{
                viewModel.onSaveClick()
+            }
+
+            btnBack.setOnClickListener {
+                viewModel.onBackClick()
             }
         }
 
@@ -79,6 +85,9 @@ class AddEditDealFragment : Fragment() {
                                 "add_edit_result" to event.result
                             )
                         )
+                        findNavController().popBackStack()
+                    }
+                    AddEditDealViewModel.AddEditDealEvent.NavigateBack -> {
                         findNavController().popBackStack()
                     }
                 }.exhaustive

@@ -19,6 +19,11 @@ class AddEditDealViewModel @ViewModelInject constructor(
 ): ViewModel() {
 
     val deal =  state.get<Deal>("deal")
+    var fragmentTitle = if(deal != null){
+        "Update your Deal,"
+    }else{
+        "Create your Deal,"
+    }
 
     var dealName = state.get<String>("dealName") ?: deal?.tickerName ?: ""
         set(value) {
@@ -106,8 +111,13 @@ class AddEditDealViewModel @ViewModelInject constructor(
         addEditDealEventChannel.send(AddEditDealEvent.NavigateBackWithResult(EDIT_TASK_RESULT_OK))
     }
 
+    fun onBackClick() = viewModelScope.launch {
+        addEditDealEventChannel.send(AddEditDealEvent.NavigateBack)
+    }
+
     sealed class AddEditDealEvent {
         data class ShowInvalidInputMessage(val msg: String) : AddEditDealEvent()
         data class NavigateBackWithResult(val result: Int) : AddEditDealEvent()
+        object NavigateBack : AddEditDealEvent()
     }
 }

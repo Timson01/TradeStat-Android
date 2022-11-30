@@ -17,6 +17,9 @@
             app:exitAnim="@anim/exit_anim"
             app:popEnterAnim="@anim/pop_enter_anim"
             app:popExitAnim="@anim/pop_exit_anim" />
+        <action
+            android:id="@+id/action_dealsFragment_to_dealDetailFragment"
+            app:destination="@id/dealDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/descriptionFragment"
@@ -100,6 +103,17 @@
         android:name="space.timur.tradestatandroid.ui.add_edit_deal.AddEditDealFragment"
         android:label="fragment_add_deal"
         tools:layout="@layout/fragment_add_edit_deal" >
+        <argument
+            android:name="deal"
+            app:argType="space.timur.tradestatandroid.data.Deal"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/dealDetailFragment"
+        android:name="space.timur.tradestatandroid.ui.deal_detail.DealDetailFragment"
+        android:label="fragment_deal_detail"
+        tools:layout="@layout/fragment_deal_detail" >
         <argument
             android:name="deal"
             app:argType="space.timur.tradestatandroid.data.Deal"

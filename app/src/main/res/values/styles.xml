@@ -25,6 +25,21 @@
         <item name="android:letterSpacing">0.16</item>
     </style>
 
+    <style name="DealDetailDescSectionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="DealDetailTickerText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
     <style name="DealItemTitleText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -37,6 +52,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="DealDetailDateText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
         <item name="android:fontFamily">@font/lato_regular</item>
     </style>
 
@@ -81,6 +104,15 @@
         <item name="android:layout_marginLeft">30dp</item>
         <item name="android:layout_marginRight">30dp</item>
         <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="ViewDealDetailStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/shadow_box_background</item>
     </style>
 
 </resources>

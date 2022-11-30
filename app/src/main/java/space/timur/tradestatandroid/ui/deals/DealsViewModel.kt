@@ -68,7 +68,7 @@ class DealsViewModel @ViewModelInject constructor(
     }
 
     fun onDealSelected(deal: Deal) = viewModelScope.launch {
-
+        dealsEventChannel.send(DealsEvent.NavigateToDealDetailFragment(deal))
     }
 
     fun onDealLongClick(deal: Deal) = viewModelScope.launch {
@@ -91,6 +91,7 @@ class DealsViewModel @ViewModelInject constructor(
         object NavigateToAddDealsScreen : DealsEvent()
         data class ShowUndoDeleteMessage(val deal: Deal) : DealsEvent()
         data class ShowDealSavedConfirmationMessage(val msg: String) : DealsEvent()
+        data class NavigateToDealDetailFragment(val deal: Deal): DealsEvent()
     }
 }
 
