@@ -41,8 +41,10 @@ class AddEditDealFragment : Fragment() {
             editDescription.setText(viewModel.dealDescription)
             tvEditDate.text = SimpleDateFormat("dd.MM.yy").format(viewModel.dealCreated)
             editHashtag.setText(viewModel.dealHashtag)
-            amountOfDeal.setText(viewModel.dealAmount.toString())
-            numberOfStocks.setText(viewModel.dealNumberOfStocks.toString())
+            if(viewModel.dealAmount != 0.0 || viewModel.dealNumberOfStocks != 0){
+                amountOfDeal.setText(viewModel.dealAmount.toString())
+                numberOfStocks.setText(viewModel.dealNumberOfStocks.toString())
+            }
             fragTitle.text = viewModel.fragmentTitle
 
             editTickerName.addTextChangedListener {
@@ -54,13 +56,16 @@ class AddEditDealFragment : Fragment() {
             editHashtag.addTextChangedListener {
                 viewModel.dealHashtag = it.toString()
             }
-            amountOfDeal.addTextChangedListener {
-                viewModel.dealAmount = it.toString().toDouble()
+            if(amountOfDeal.text.isNotEmpty()){
+                amountOfDeal.addTextChangedListener {
+                    viewModel.dealAmount = it.toString().toDouble()
+                }
             }
-            numberOfStocks.addTextChangedListener {
-                viewModel.dealNumberOfStocks = it.toString().toInt()
+            if(numberOfStocks.text.isNotEmpty()){
+                numberOfStocks.addTextChangedListener {
+                    viewModel.dealNumberOfStocks = it.toString().toInt()
+                }
             }
-
             btnCreateDeal.setOnClickListener{
                viewModel.onSaveClick()
             }
