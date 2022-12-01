@@ -11,11 +11,13 @@ import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_deals.*
 import space.timur.tradestatandroid.databinding.FragmentAddEditDealBinding
 import space.timur.tradestatandroid.util.exhaustive
+import java.text.SimpleDateFormat
 
 @AndroidEntryPoint
 class AddEditDealFragment : Fragment() {
@@ -37,7 +39,7 @@ class AddEditDealFragment : Fragment() {
         binding.apply {
             editTickerName.setText(viewModel.dealName)
             editDescription.setText(viewModel.dealDescription)
-            tvEditDate.text = viewModel.dealCreated
+            tvEditDate.text = SimpleDateFormat("dd.MM.yy").format(viewModel.dealCreated)
             editHashtag.setText(viewModel.dealHashtag)
             amountOfDeal.setText(viewModel.dealAmount.toString())
             numberOfStocks.setText(viewModel.dealNumberOfStocks.toString())
@@ -52,9 +54,6 @@ class AddEditDealFragment : Fragment() {
             editHashtag.addTextChangedListener {
                 viewModel.dealHashtag = it.toString()
             }
-            tvEditDate.addTextChangedListener {
-                viewModel.dealCreated = it.toString()
-            }
             amountOfDeal.addTextChangedListener {
                 viewModel.dealAmount = it.toString().toDouble()
             }
@@ -68,6 +67,10 @@ class AddEditDealFragment : Fragment() {
 
             btnBack.setOnClickListener {
                 viewModel.onBackClick()
+            }
+
+            btnEditDate.setOnClickListener {
+                showDatePicker()
             }
         }
 
@@ -92,6 +95,18 @@ class AddEditDealFragment : Fragment() {
                     }
                 }.exhaustive
             }
+        }
+    }
+
+    private fun showDatePicker() {
+        val datePicker = MaterialDatePicker.Builder
+            .datePicker()
+            .setTitleText("Select Date")
+            .build()
+        datePicker.show(parentFragmentManager, "date_picker")
+        datePicker.addOnPositiveButtonClickListener { datePicked ->
+            viewModel.dealCreated = datePicked
+            binding.tvEditDate.text = SimpleDateFormat("dd.MM.yy").format(viewModel.dealCreated)
         }
     }
 

@@ -37,7 +37,7 @@ class AddEditDealViewModel @ViewModelInject constructor(
             state.set("dealDescription",  value)
         }
 
-    var dealCreated = state.get<String>("dealCreated") ?: deal?.createdDateFormatted ?: ""
+    var dealCreated = state.get<Long>("dealCreated") ?: deal?.created ?: 0L
         set(value) {
             field = value
             state.set("dealCreated",  value)
@@ -71,27 +71,27 @@ class AddEditDealViewModel @ViewModelInject constructor(
     val addEditDealEvent = addEditDealEventChannel.receiveAsFlow()
 
     fun onSaveClick(){
-        if (dealName.isBlank() && dealCreated.isNotBlank()) {
+        if (dealName.isBlank() && dealCreated != 0L) {
             // show invalid input message
             showInvalidInputMessage("Name cannot be empty")
             return
         }
-        if (dealCreated.isBlank() && dealCreated.isNotBlank()){
+        if (dealCreated == 0L && dealName.isNotBlank()){
             showInvalidInputMessage("Deal created cannot be empty")
             return
         }
-        if(dealName.isBlank() && dealCreated.isBlank()) {
+        if(dealName.isBlank() && dealCreated == 0L) {
             showInvalidInputMessage("Deal name and created cannot be empty")
             return
         }
         if(deal != null){
             val updatedDeal = deal.copy(tickerName = dealName, description = dealDescription,
-                created = deal.created, hashtag = dealHashtag, imagePath = dealImagePath,
+                created = dealCreated, hashtag = dealHashtag, imagePath = dealImagePath,
             amount = dealAmount, numberOfStocks = dealNumberOfStocks)
             updateDeal(updatedDeal)
         }else{
             val newDeal = Deal(tickerName = dealName, description = dealDescription,
-                created = deal?.created ?: 0, hashtag = dealHashtag, imagePath = dealImagePath,
+                created = dealCreated, hashtag = dealHashtag, imagePath = dealImagePath,
                 amount = dealAmount, numberOfStocks = dealNumberOfStocks)
             createDeal(newDeal)
         }

@@ -163,6 +163,7 @@
                         android:textAlignment="center" />
 
                     <ImageView
+                        android:id="@+id/btn_edit_date"
                         android:layout_width="18dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_date_icon" />
